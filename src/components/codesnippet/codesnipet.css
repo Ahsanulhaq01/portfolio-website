@@ -1,0 +1,30 @@
+.token.keyword {
+  color: #68C161;
+}
+.token.string {
+  color: #5CD0F1;
+  
+}
+.token.function {
+ color: #5CD0F1;
+}
+.token.tag{
+    color:#5CD0F1;
+}
+
+.line-numbers .line-numbers-rows {
+  color: #45556C;
+  border: none;
+}
+
+.line-numbers-rows > span:before {
+  color: #888;  /* line number color */
+}
+
+.code-snipet-container pre {
+  background: #0A0F1C; 
+  padding: 20px;
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+}

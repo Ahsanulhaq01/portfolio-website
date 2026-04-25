@@ -1,0 +1,67 @@
+.main-container{
+    width: 100vw;
+    /* border: 2px solid red; */
+    max-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #050815;
+    color: white;
+    /* padding: ; */
+}
+.main-container .navbar-heading{
+    font-weight: bold;
+    white-space: nowrap;
+    
+}
+.main-container .list-of-pages{
+    display: flex;
+    /* border: 2px solid green; */
+    flex: 1;
+    max-width: 300px;
+    justify-content: space-between;
+    padding: 2px 4px;
+}
+.list-of-pages p{
+    cursor: pointer;
+    color: #394151;
+    transition: color 0.3s ease-in;
+    font-size: 14px;
+}
+.list-of-pages p:hover{
+    color: #61DAFB;
+}
+.list-of-pages .home-page{
+    color: #61DAFB;
+    /* text-decoration:underline; */
+    padding-bottom: 4px;
+    border-bottom: 2px solid #61DAFB;
+}
+
+.main-container .resume-btn{
+    padding: 8px 20px;
+    font-family: Space Grotesk;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #61DAFB;
+    /* outline: none; */
+    border: none;
+    border-radius: 4px;
+    transition: scale 0.4s ease;
+}
+.main-container .resume-btn:active{
+    transform: scale(0.95);
+}
+
+@media (max-width : 720px) {
+    .main-container .list-of-pages{
+        display: none;
+    }
+}
+
+@media (max-width : 360px) {
+    .main-container .navbar-heading{
+        white-space: wrap;
+    }
+}
