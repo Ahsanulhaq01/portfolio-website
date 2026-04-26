@@ -1,5 +1,7 @@
 // import React from 'react'
 import CodeSnipet from '../../components/codesnippet/CodeSnipet'
+import Languages from '../../components/languagesused/Languages'
+import { motion } from 'framer-motion'
 import './homepage.css'
 
 function Homepage() {
@@ -7,7 +9,12 @@ function Homepage() {
     <>
     <section className="hero">
         <div className="hero-container">
-            <div className="text-hero-container">
+            <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ amount: 0.2 }} className="text-hero-container">
                 <p className="title-of-text-hero-container">FULL-STACK ENGINEERING</p>
                 <div className="heading-of-THC">
                     <h1>Full-Stack Developer Specializing in the</h1>
@@ -16,22 +23,31 @@ function Homepage() {
                 <p className="services-des-container">
                     I build high-performance, scalable web applications using MongoDB, Express, React, and Node.js. Turning complex requirements into elegant, user-centric digital experiences.
                 </p>
-                <div className="button-container">
+                <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ amount: 0.2 }} className="button-container">
                     <button>View Project</button>
                     <button>Get in Touch</button>
-                </div>
+                </motion.div>
                 <div className="expertise-container">
                     <pre>EXPERTISE</pre>
-                    <div className="languages">
-                        <p>React</p>
-                        <p>Node.js</p>
-                        <p>MongoDB</p>
-                        <p>Express</p>
-                    </div>
+
+                    {/* component of languages is used */}
+                    <Languages items={["React", "Node.js", "MongoDB", "Express"]}/> 
 
                 </div>
-            </div>
-            <div className="code-hero-container">
+            </motion.div>
+
+
+            <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ amount: 0.2 }} className="code-hero-container">
                 <div className="window-btn-and-filename-container">
                     <div className="window-btn">
                         <span></span>
@@ -42,7 +58,7 @@ function Homepage() {
                 </div>
                 {/* for code i have use another component and this code is written with the help of prismjs library */}
                 <CodeSnipet/>
-            </div>
+            </motion.div>
             
         </div>
     </section>

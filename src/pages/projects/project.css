@@ -1,0 +1,131 @@
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* border: 2px solid red; */
+    background-color:#131313 ;
+    min-height: 100vh;
+}
+.project-page-heading{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 8px;
+    width: 100%;
+    max-width: 90%;
+}
+.project-page-heading h1{
+    color: #BFEFFF;
+    font-size: clamp(28px , 3vw , 45px);
+}
+.project-page-heading p{
+    color: #828A8D;
+    max-width: 60%;
+    white-space: wrap;
+    font-size: 14px;
+}
+
+.projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 90%;
+    gap: 3rem;
+    padding: 8px 0px;
+}
+
+.project-page-footer{
+    width: 100%;
+    max-width: 90%;
+    color: white;
+    background-color: #1C1B1B;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 200px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.project-page-footer .footer-text-part{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 8px;
+    min-height: 120px;
+    justify-content: space-evenly;
+    padding: 4px;
+
+}
+.footer-text-part p{
+    color: #889094;
+}
+
+.project-page-footer .button-container-of-PPF{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    max-width: 400px;
+    justify-content: space-evenly;
+    padding: 2px;
+}
+.button-container-of-PPF button{
+    padding:  12px;
+    border: none;
+    cursor: pointer;
+}
+
+.follow-on-github-btn{
+    background-color: #BFEFFF;
+    color: #2c4f58;
+    font-weight: bold;
+    
+}
+.follow-on-github-btn:hover{
+    color: #1e343a;
+    background-color: #82c6dd;
+}
+.download-pdf-btn{
+    background-color: transparent;
+    color: #5CA555;
+    transition: all 0.3s ease;
+}
+.download-pdf-btn:hover{
+    /* border: 1px solid #5CA555; */
+    background-color: #1E281E;
+}
+
+
+
+@media (max-width: 1060px) {
+    .project-page-footer{
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-evenly;
+        /* align-items: start; */
+    }
+    .button-container-of-PPF{
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width:388px) {
+    .button-container-of-PPF{
+        flex-direction: column;
+        /* width: 100%; */
+
+        
+    }
+    
+    .button-container-of-PPF button{
+        width: 100%;
+        /* max-width: 90%; */
+    }
+
+}
