@@ -1,16 +1,66 @@
-# React + Vite
+# 🚧 Personal Portfolio (Work in Progress)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using **React** and **CSS**.
+The project is currently under development, and I am continuously working on improving its design and functionality.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔥 Current Status
 
-## React Compiler
+* ✅ Homepage UI is completed
+* ⚠️ Other sections are under development
+* ❌ Functional features are not fully implemented yet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 [View Live Portfolio](https://portfolio-website-kappa-eight-85.vercel.app/)
+
+> ⚠️ Note: This is an early version of the project. Some sections and features may not work properly.
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚛️ React
+* 🎨 CSS
+
+---
+
+## 📌 Planned Features
+
+* About Me section
+* Projects showcase
+* Contact form (with backend integration)
+* Fully responsive design
+* Smooth animations and improved UI/UX
+
+---
+
+## ⚙️ Setup Locally
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+```
+
+---
+
+
+## 📅 Progress
+
+This portfolio is being actively updated as I continue learning and improving my web development skills.
+
+---
+
+## 📧 Contact
+
+* Email: [ulhaqahsan276@gmail.com]
+* LinkedIn: [https://www.linkedin.com/in/ahsan-ulhaq-8581a82ba/]
+
+---
+
+⭐ If you like this project, consider giving it a star!
