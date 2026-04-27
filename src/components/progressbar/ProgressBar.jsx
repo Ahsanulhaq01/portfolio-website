@@ -1,5 +1,6 @@
 import './progressbar.css'
 import { motion } from 'framer-motion'
+import { useState, useRef } from 'react';
 
 function ProgressBar({value}) {
     const widthMap = {
@@ -8,6 +9,28 @@ function ProgressBar({value}) {
         DataBase : 79,
         Tools : 65,
     }
+    const [count, setCount] = useState(0);
+
+  const intervalRef = useRef(null);
+
+  const startAnimation = () => {
+
+    setCount(0);
+
+    let current = 0;
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+
+    intervalRef.current = setInterval(() => {
+      current += 1;
+      setCount(current);
+
+      if (current >= widthMap[value]) {
+        clearInterval(intervalRef.current);
+      }
+    }, 14);
+  }
   return (
     <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -18,14 +41,30 @@ function ProgressBar({value}) {
         <div className="progress-bar-container">
           <div className="profficency-and-percentage">
             <p>Proficiency</p>
-            <p>{widthMap[value]}%</p>
+            <motion.p
+        onViewportEnter={startAnimation}   // 🔥 KEY LINE
+        viewport={{ once: false }}
+      >
+        {count}%
+      </motion.p>
           </div>
 
         </div>
         <div className="progress-bar">
-            <div className="progress-fill" style={{width : widthMap[value]+"%"}}>
+          <motion.div
+          className="progress-fill"
+          style={{
+            width: `${widthMap[value]}%`, // final width
+          }}
+          initial={{ width: 0 }}
+          whileInView={{ width: `${widthMap[value]}%` }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false }} 
+
+        />
+            {/* <div className="progress-fill" style={{width : widthMap[value]+"%"}}>
                 
-            </div>
+            </div> */}
         </div>
     </motion.div>
   )
