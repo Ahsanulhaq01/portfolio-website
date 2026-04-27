@@ -1,0 +1,22 @@
+.usedtech-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 8px;
+    background-color: #171B23;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    border-radius: 4px;
+}
+
+.heading-container{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.tech-heading-text{
+    font-size: clamp(20px , 2vw , 30px);
+}
+

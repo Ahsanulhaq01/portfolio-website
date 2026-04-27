@@ -32,6 +32,26 @@ function Languages({ items }) {
       backgroundColor: "#1E2938",
       borderColor: "#4CA4BC",
     },
+    HTML5 : {
+      color: "#E88739",
+      backgroundColor: "#2D2421",
+      borderColor: "#a56344",
+    },
+    CSS3 : {
+      color: "#437dc9",
+      backgroundColor: "#1A2538",
+      borderColor: "#3362b1",
+    },
+    REST_APIs :{
+      color: "#B49418",
+      backgroundColor: "#2C2A20",
+      borderColor: "#a38d3e",
+    },
+    Git : {
+      color: "#B95919",
+      backgroundColor: "#392318",
+      borderColor: "#a0522a",
+    }
   };
   return (
     <motion.div

@@ -1,0 +1,27 @@
+.progress-bar{
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #22262E;
+}
+.progress-fill{
+    height: 100%;
+    background-color: #458ca0;
+    border-radius: 2px;
+}
+
+.progress-bar-main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profficency-and-percentage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 8px;
+}
+.profficency-and-percentage p:nth-child(1){
+    color: #7788a3;
+}
