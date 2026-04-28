@@ -9,14 +9,18 @@ function Projects() {
   return (
     <>
       <section className="projects-section">
-        <div className="project-page-heading">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ amount: 0.2 }} className="project-page-heading">
           <h1>Selected Projects</h1>
           <p className="short-intro-of-app">
             A curated selection of full-stack applications built with the MERN
             stack. Focusing on scalable architecture, clean code, and intuitive
             user experiences.{" "}
           </p>
-        </div>
+        </motion.div>
 
         <div className="projects-cards">
           <CardComponent
