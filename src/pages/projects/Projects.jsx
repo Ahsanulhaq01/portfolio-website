@@ -5,10 +5,10 @@ import chatbotImg from './../../assets/chatbot.png'
 import expenseTrackerImg from './../../assets/expense-tracker.png'
 import CardComponent from "../../components/projectCardComponent/CardComponent";
 import "./project.css";
-function Projects() {
+function Projects({projectRef}) {
   return (
     <>
-      <section className="projects-section">
+      <section className="projects-section section" ref={projectRef} id="projects">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -81,8 +81,8 @@ Helps users add and track expenses with a clean interface."
           </div>
 
           <div className="button-container-of-PPF">
-            <button className="follow-on-github-btn">FOLLOW ON GITHUB</button>
-            <button className="download-pdf-btn">DOWNLOAD PDF</button>
+            <a href="https://github.com/Ahsanulhaq01" target="_blank" className="follow-on-github-btn">FOLLOW ON GITHUB</a>
+            <a href="https://leetcode.com/u/Ahsanulhaq01/" target="_blank" className="follow-on-leetcode">FOLLOW ON LEETCODE</a>
           </div>
         </motion.div>
       </section>

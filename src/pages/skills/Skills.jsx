@@ -2,10 +2,10 @@ import UsedTechnologies from '../../components/technologies/UsedTechnologies'
 import { motion } from 'framer-motion'
 import './skills.css'
 
-function Skills() {
+function Skills({skillRef}) {
   return (
     <>
-        <section className="skills-section">
+        <section className="skills-section section" ref={skillRef} id='skills'>
             <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

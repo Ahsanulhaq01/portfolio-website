@@ -9,6 +9,8 @@
     background-color: #050815;
     color: white;
     /* padding: ; */
+    position: fixed;
+    z-index: 100;
 }
 .main-container .navbar-heading{
     font-weight: bold;
@@ -23,23 +25,24 @@
     justify-content: space-between;
     padding: 2px 4px;
 }
-.list-of-pages p{
+.list-of-pages button{
     cursor: pointer;
     color: #394151;
     transition: color 0.3s ease-in;
     font-size: 14px;
+    background-color: transparent;
+    border: none;
 }
-.list-of-pages p:hover{
+.list-of-pages button:hover{
     color: #61DAFB;
 }
-.list-of-pages .home-page{
+.list-of-pages .active{
     color: #61DAFB;
-    /* text-decoration:underline; */
     padding-bottom: 4px;
     border-bottom: 2px solid #61DAFB;
 }
 
-.main-container .resume-btn{
+.main-container a .resume-btn{
     padding: 8px 20px;
     font-family: Space Grotesk;
     font-size: 13px;
@@ -50,7 +53,7 @@
     border-radius: 4px;
     transition: scale 0.4s ease;
 }
-.main-container .resume-btn:active{
+.main-container a .resume-btn:active{
     transform: scale(0.95);
 }
 

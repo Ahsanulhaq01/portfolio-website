@@ -4,10 +4,10 @@ import Languages from '../../components/languagesused/Languages'
 import { motion } from 'framer-motion'
 import './homepage.css'
 
-function Homepage() {
+function Homepage({homeRef}) {
   return (
     <>
-    <section className="hero">
+    <section className="hero section" ref={homeRef} id='home'>
         <div className="hero-container">
             <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -29,8 +29,8 @@ function Homepage() {
       exit={{ opacity: 0, y: 50 }}
       transition={{ duration: 0.4 }}
       viewport={{ amount: 0.2 }} className="button-container">
-                    <button>View Project</button>
-                    <button>Get in Touch</button>
+                    <a href='#projects'>View Project</a>
+                    <a href='#contact'>Get in Touch</a>
                 </motion.div>
                 <div className="expertise-container">
                     <pre>EXPERTISE</pre>

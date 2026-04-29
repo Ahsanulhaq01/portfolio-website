@@ -5,9 +5,9 @@ import { FiShare2 } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
 import { motion } from "framer-motion";
 
-function Contact() {
+function Contact({contactRef}) {
   return (
-    <section className="contact-section-container">
+    <section className="contact-section-container section" ref={contactRef} id="contact">
       <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ function Contact() {
                 <HiOutlineMail size={20} color="#53B9D5"/>
                 <div className="email-address">
                 <p>EMAIL ME</p>
-                <p>hello@devportfolio.com</p>
+                <p>ulhaqahsan276@gmail.com</p>
                 </div>
           </div>
           <div className="social-network-container">

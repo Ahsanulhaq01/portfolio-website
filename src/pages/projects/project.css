@@ -7,6 +7,7 @@
     /* border: 2px solid red; */
     background-color:#131313 ;
     min-height: 100vh;
+    scroll-margin-top: 60px;
 }
 .project-page-heading{
     /* border: 2px solid red; */
@@ -74,10 +75,12 @@
     justify-content: space-evenly;
     padding: 2px;
 }
-.button-container-of-PPF button{
+.button-container-of-PPF a{
     padding:  12px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .follow-on-github-btn{
@@ -90,12 +93,12 @@
     color: #1e343a;
     background-color: #82c6dd;
 }
-.download-pdf-btn{
+.follow-on-leetcode{
     background-color: transparent;
     color: #5CA555;
     transition: all 0.3s ease;
 }
-.download-pdf-btn:hover{
+.follow-on-leetcode:hover{
     /* border: 1px solid #5CA555; */
     background-color: #1E281E;
 }
@@ -115,7 +118,7 @@
 
 }
 
-@media (max-width:388px) {
+@media (max-width:420px) {
     .button-container-of-PPF{
         flex-direction: column;
         /* width: 100%; */
@@ -123,7 +126,7 @@
         
     }
     
-    .button-container-of-PPF button{
+    .button-container-of-PPF a{
         width: 100%;
         /* max-width: 90%; */
     }

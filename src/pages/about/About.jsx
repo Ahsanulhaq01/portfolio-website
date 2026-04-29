@@ -2,10 +2,10 @@ import './about.css'
 import myImage from './../../assets/myPhoto.jpeg'
 import { motion } from 'framer-motion';
 import AboutComponentTech from '../../components/component_for_about_page/AboutComponentTech';
-function About(){
+function About({aboutRef}){
     return(
         <>
-        <section className="about-section">
+        <section className="about-section section" ref={aboutRef} id='about'>
             <div className="about-text-container">
                 <motion.p
           initial={{ opacity: 0, y: 50 }}
