@@ -5,6 +5,7 @@ import Skills from "./pages/skills/Skills"
 import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import { useRef } from "react"
+import Footer from "./components/footer/Footer"
 function App() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
@@ -19,6 +20,7 @@ function App() {
     <Skills skillRef = {skillRef} />
     <About aboutRef={aboutRef} />
     <Contact contactRef = {contactRef}/>
+    <Footer/>
     </>
   )
 }
