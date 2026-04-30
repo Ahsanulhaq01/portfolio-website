@@ -6,6 +6,9 @@ import About from "./pages/about/About"
 import Contact from "./pages/contact/Contact"
 import { useRef } from "react"
 import Footer from "./components/footer/Footer"
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
@@ -21,6 +24,8 @@ function App() {
     <About aboutRef={aboutRef} />
     <Contact contactRef = {contactRef}/>
     <Footer/>
+
+<ToastContainer />
     </>
   )
 }
