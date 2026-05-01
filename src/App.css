@@ -1,0 +1,14 @@
+.all-pages-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #131313;
+    gap: 16px;
+    padding-left: 16px;
+}
+
+@media (max-width : 420px) {
+    .all-pages-container{
+        padding-left: 8px;
+    }
+}

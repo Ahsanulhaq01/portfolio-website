@@ -8,6 +8,7 @@ import { useRef } from "react"
 import Footer from "./components/footer/Footer"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import './App.css'
 
 function App() {
   const homeRef = useRef(null);
@@ -18,14 +19,16 @@ function App() {
   return (
     <>
     <Navbar refs ={{homeRef , projectRef , skillRef ,contactRef , aboutRef}} />
+    <div className="all-pages-container">
     <Homepage homeRef={homeRef}/>
     <Projects projectRef = {projectRef} />
     <Skills skillRef = {skillRef} />
     <About aboutRef={aboutRef} />
     <Contact contactRef = {contactRef}/>
-    <Footer/>
 
-<ToastContainer />
+    </div>
+    <Footer/>
+  <ToastContainer />
     </>
   )
 }
