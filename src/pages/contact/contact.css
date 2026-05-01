@@ -180,6 +180,7 @@ label{
 @media (max-width:580px) {
     .contact-form-and-contact-info-container{
         flex-direction: column;
+        min-width: 100%;
     }
     .contact-info-container{
         min-width: 100%;
