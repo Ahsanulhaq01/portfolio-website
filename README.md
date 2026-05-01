@@ -6,7 +6,7 @@ The website is fully functional and designed with a focus on clean UI, smooth an
 
 🌐 Live Demo
 
-👉 [View Portfolio : https://portfolio-website-kappa-eight-85.vercel.app/]
+👉 [https://portfolio-website-kappa-eight-85.vercel.app/]
 
 🛠️ Tech Stack
 ⚛️ React
