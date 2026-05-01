@@ -30,10 +30,12 @@ function Contact({ contactRef }) {
   };
   return (
     <section
-      className="contact-section-container section"
+      className="contact-section section"
       ref={contactRef}
       id="contact"
     >
+      <div className="contact-section-container">
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -181,6 +183,7 @@ function Contact({ contactRef }) {
             </div>
           </div>
         </motion.div>
+      </div>
       </div>
     </section>
   );

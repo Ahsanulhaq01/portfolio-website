@@ -6,6 +6,8 @@ function About({aboutRef}){
     return(
         <>
         <section className="about-section section" ref={aboutRef} id='about'>
+            <div className="about-section-container">
+
             <div className="about-text-container">
                 <motion.p
           initial={{ opacity: 0, y: 50 }}
@@ -42,6 +44,7 @@ function About({aboutRef}){
           viewport={{ amount: 0.2 }} className="about-image-container">
                 <img src={myImage} alt="myImage" />
             </motion.div>
+            </div>
         </section>
         </>
     )
