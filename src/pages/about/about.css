@@ -84,7 +84,8 @@
         gap: 1rem;
     }
     .about-section{
-      align-items: start;
+      align-items: center;
+      justify-content: center;
     }
     .about-text-container{
         min-width: 100%;
