@@ -1,66 +1,48 @@
-# 🚧 Personal Portfolio (Work in Progress)
+🚀 Personal Portfolio Website
 
-This is my personal portfolio website built using **React** and **CSS**.
-The project is currently under development, and I am continuously working on improving its design and functionality.
+This is my personal portfolio website built using React, where I showcase my skills, projects, and development journey as a software engineering student.
 
----
+The website is fully functional and designed with a focus on clean UI, smooth animations, and a responsive user experience.
 
-## 🔥 Current Status
+🌐 Live Demo
 
-* ✅ Homepage UI is completed
-* ⚠️ Other sections are under development
-* ❌ Functional features are not fully implemented yet
+👉 [View Portfolio : https://portfolio-website-kappa-eight-85.vercel.app/]
 
----
-
-## 🌐 Live Preview
-
-👉 [View Live Portfolio](https://portfolio-website-kappa-eight-85.vercel.app/)
-
-> ⚠️ Note: This is an early version of the project. Some sections and features may not work properly.
-
----
-
-## 🛠️ Tech Stack
-
-* ⚛️ React
-* 🎨 CSS
-
----
-
-## 📌 Planned Features
-
-* About Me section
-* Projects showcase
-* Contact form (with backend integration)
-* Fully responsive design
-* Smooth animations and improved UI/UX
-
----
-
-## ⚙️ Setup Locally
-
-```bash
+🛠️ Tech Stack
+⚛️ React
+🎨 CSS
+🎞️ Framer Motion (animations)
+🔔 React Toastify (notifications)
+📧 EmailJS (contact form integration)
+✨ Features
+🏠 Home Section – Clean introduction and overview
+👨‍💻 About Section – Information about me and my journey
+🛠️ Skills Section – Technologies and tools I use
+📂 Projects Section – Showcase of my work with live/demo links
+📬 Contact Section – Functional contact form using EmailJS
+🎞️ Smooth animations for better user experience
+🔔 Real-time feedback using toast notifications
+📱 Responsive design for different screen sizes
+📌 Project Status
+✅ All main sections completed
+✅ Fully functional UI
+✅ Contact form working
+⚠️ Continuous improvements in UI/UX and performance
+⚙️ Run Locally
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
 npm run dev
-```
+📈 What I Learned
 
----
+Through this project, I improved:
 
-
-## 📅 Progress
-
-This portfolio is being actively updated as I continue learning and improving my web development skills.
-
----
-
-## 📧 Contact
-
-* Email: [ulhaqahsan276@gmail.com]
-* LinkedIn: [https://www.linkedin.com/in/ahsan-ulhaq-8581a82ba/]
-
----
+Component-based architecture in React
+Handling user interactions and state
+Implementing animations using Framer Motion
+Integrating third-party services like EmailJS
+Writing cleaner and more structured frontend code
+📬 Contact
+📧 Email: ulhaqahsan276@gmail.com
 
 ⭐ If you like this project, consider giving it a star!
