@@ -203,7 +203,6 @@
 @media (max-width :800px) {
     .hero-container{
         margin-top: 60px;
-        border: 2px solid red;
     }
 }
 
