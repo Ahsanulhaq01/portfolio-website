@@ -39,7 +39,7 @@ Allows users to browse and manage recipes with a smooth UI."
 Built while learning from SuperSimpleDev, focusing on state management."
             image= {ecommerceImg}
             tech={["React", "Redux"]}
-            demoLink="https://ecommerce-website-two-vert.vercel.app/"
+            demoLink="https://ecommerce-fronted-pi.vercel.app/"
             githubLink="https://github.com/Ahsanulhaq01/Ecommerce-project"
           />
           <CardComponent

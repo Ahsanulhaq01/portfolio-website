@@ -14,6 +14,8 @@ The website is fully functional and designed with a focus on clean UI, smooth an
 🎞️ Framer Motion (animations)
 🔔 React Toastify (notifications)
 📧 EmailJS (contact form integration)
+
+
 ✨ Features
 🏠 Home Section – Clean introduction and overview
 👨‍💻 About Section – Information about me and my journey
@@ -23,14 +25,17 @@ The website is fully functional and designed with a focus on clean UI, smooth an
 🎞️ Smooth animations for better user experience
 🔔 Real-time feedback using toast notifications
 📱 Responsive design for different screen sizes
+
+
 📌 Project Status
 ✅ All main sections completed
 ✅ Fully functional UI
 ✅ Contact form working
 ⚠️ Continuous improvements in UI/UX and performance
+
 ⚙️ Run Locally
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Ahsanulhaq01/portfolio-website
+cd portfolio-website
 npm install
 npm run dev
 📈 What I Learned
