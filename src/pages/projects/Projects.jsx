@@ -1,19 +1,25 @@
 import { motion } from "framer-motion";
-import recipeimg from './../../assets/recipebook.jpg'
-import ecommerceImg from './../../assets/ecommerce-project.jpg'
-import chatbotImg from './../../assets/chatbot.png'
-import gourmetKitchenImg from './../../assets/GourmetKitchen.png'
+import recipeimg from "./../../assets/recipebook.jpg";
+import ecommerceImg from "./../../assets/ecommerce-project.jpg";
+import chatbotImg from "./../../assets/chatbot.png";
+import gourmetKitchenImg from "./../../assets/GourmetKitchen.png";
 import CardComponent from "../../components/projectCardComponent/CardComponent";
 import "./project.css";
-function Projects({projectRef}) {
+function Projects({ projectRef }) {
   return (
     <>
-      <section className="projects-section section" ref={projectRef} id="projects">
+      <section
+        className="projects-section section"
+        ref={projectRef}
+        id="projects"
+      >
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          viewport={{ amount: 0.2 }} className="project-page-heading">
+          viewport={{ amount: 0.2 }}
+          className="project-page-heading"
+        >
           <h1>Selected Projects</h1>
           <p className="short-intro-of-app">
             A curated selection of full-stack applications built with the MERN
@@ -24,12 +30,11 @@ function Projects({projectRef}) {
 
         <div className="projects-cards">
           <CardComponent
-            title="Recipe Book"
-            description="A full-stack recipe app with both frontend and backend implementation.
-Allows users to browse and manage recipes with a smooth UI."
-            image= {recipeimg}
-            tech={["MongoDB", "Node.js", "React", "Express"]}
-            demoLink="https://www.recipebook.dev"
+            title="GourmetKitchen"
+            description="GourmetKitchen is a full-stack social platform for food lovers to discover, share, and manage recipes, with features like user following, real-time notifications, advanced search, secure JWT authentication, and Cloudinary media handling."
+            image={gourmetKitchenImg}
+            tech={["React", ["Node.js"], "MongoDB", ["Express"]]}
+            demoLink="https://gourmetkitchen-one.vercel.app/"
             githubLink="https://github.com/Ahsanulhaq01/full-stack-web-apps"
           />
 
@@ -37,11 +42,22 @@ Allows users to browse and manage recipes with a smooth UI."
             title="E-Commerce Web App"
             description=" A React and Redux-based e-commerce frontend with cart functionality.
 Built while learning from SuperSimpleDev, focusing on state management."
-            image= {ecommerceImg}
+            image={ecommerceImg}
             tech={["React", "Redux"]}
             demoLink="https://ecommerce-fronted-pi.vercel.app/"
             githubLink="https://github.com/Ahsanulhaq01/Ecommerce-project"
           />
+
+          <CardComponent
+            title="Recipe Book"
+            description="A full-stack recipe app with both frontend and backend implementation.
+Allows users to browse and manage recipes with a smooth UI."
+            image={recipeimg}
+            tech={["MongoDB", "Node.js", "React", "Express"]}
+            demoLink="https://www.recipebook.dev"
+            githubLink="https://github.com/Ahsanulhaq01/full-stack-web-apps"
+          />
+
           <CardComponent
             title="Chatbot Web App"
             description="A responsive chatbot built with React that handles a set of predefined queries.
@@ -51,17 +67,6 @@ Designed to simulate basic conversations with a simple and interactive UI."
             demoLink="https://chatbot-in-react-red.vercel.app/"
             githubLink="https://github.com/Ahsanulhaq01/Intermediate-React-Project/tree/main/Chatbot_in_react"
           />
-
-          <CardComponent
-            title="GourmetKitchen"
-            description="GourmetKitchen is a full-stack social platform for food lovers to discover, share, and manage recipes, with features like user following, real-time notifications, advanced search, secure JWT authentication, and Cloudinary media handling."
-            image= {gourmetKitchenImg}
-            tech={["React" , ["Node.js"] , "MongoDB" ,["Express"] ]}
-            demoLink="https://gourmetkitchen-one.vercel.app/"
-            githubLink="https://github.com/Ahsanulhaq01/full-stack-web-apps"
-          />
-          {/* <CardComponent />
-          <CardComponent /> */}
         </div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -80,8 +85,20 @@ Designed to simulate basic conversations with a simple and interactive UI."
           </div>
 
           <div className="button-container-of-PPF">
-            <a href="https://github.com/Ahsanulhaq01" target="_blank" className="follow-on-github-btn">FOLLOW ON GITHUB</a>
-            <a href="https://leetcode.com/u/Ahsanulhaq01/" target="_blank" className="follow-on-leetcode">FOLLOW ON LEETCODE</a>
+            <a
+              href="https://github.com/Ahsanulhaq01"
+              target="_blank"
+              className="follow-on-github-btn"
+            >
+              FOLLOW ON GITHUB
+            </a>
+            <a
+              href="https://leetcode.com/u/Ahsanulhaq01/"
+              target="_blank"
+              className="follow-on-leetcode"
+            >
+              FOLLOW ON LEETCODE
+            </a>
           </div>
         </motion.div>
       </section>
