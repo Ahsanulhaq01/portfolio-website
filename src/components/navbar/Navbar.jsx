@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import resume from './../../assets/resume.pdf'
+import resume from './../../assets/AHSAN-UL-HAQ MERN-Stack-developer.pdf'
 import "./navbar.css";
 
 function Navbar({refs}) {

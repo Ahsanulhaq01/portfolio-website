@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import recipeimg from './../../assets/recipebook.jpg'
 import ecommerceImg from './../../assets/ecommerce-project.jpg'
 import chatbotImg from './../../assets/chatbot.png'
-import expenseTrackerImg from './../../assets/expense-tracker.png'
+import gourmetKitchenImg from './../../assets/GourmetKitchen.png'
 import CardComponent from "../../components/projectCardComponent/CardComponent";
 import "./project.css";
 function Projects({projectRef}) {
@@ -53,12 +53,11 @@ Designed to simulate basic conversations with a simple and interactive UI."
           />
 
           <CardComponent
-            title="Expense Tracker Web App"
-            description="A basic expense tracker to manage daily spending easily.
-Helps users add and track expenses with a clean interface."
-            image= {expenseTrackerImg}
-            tech={["React"]}
-            demoLink="https://full-stack-web-apps.vercel.app/"
+            title="GourmetKitchen"
+            description="GourmetKitchen is a full-stack social platform for food lovers to discover, share, and manage recipes, with features like user following, real-time notifications, advanced search, secure JWT authentication, and Cloudinary media handling."
+            image= {gourmetKitchenImg}
+            tech={["React" , ["Node.js"] , "MongoDB" ,["Express"] ]}
+            demoLink="https://gourmetkitchen-one.vercel.app/"
             githubLink="https://github.com/Ahsanulhaq01/full-stack-web-apps"
           />
           {/* <CardComponent />
